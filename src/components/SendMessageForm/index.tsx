@@ -17,8 +17,8 @@ export function SendMessageForm() {
     const messageFormatted = message.trim();
 
     if (messageFormatted.length > 0) {
-      await api.post("/messages", { message: messageFormatted });
       setSendingMessage(true);
+      await api.post("/messages", { message: messageFormatted });
       setMessage("");
       Keyboard.dismiss();
 

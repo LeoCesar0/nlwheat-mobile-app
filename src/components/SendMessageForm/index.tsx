@@ -10,6 +10,7 @@ export function SendMessageForm() {
   const [message, setMessage] = useState("");
   const [sendingMessage, setSendingMessage] = useState(false);
 
+
   return (
     <View style={styles.container}>
       <TextInput
